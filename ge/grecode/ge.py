@@ -89,7 +89,7 @@ class GE(object):
         self.help_stop = False 
         self.help_image_iter = 1 
                      
-        gobject.timeout_add(2000, self.help)          
+        gobject.timeout_add(4000, self.help)          
 
 
          
