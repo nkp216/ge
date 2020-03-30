@@ -1,0 +1,6 @@
+#!/bin/bash
+# M138
+
+echo `pwd`
+python   `pwd`/grecode/ge.py
+exit 0

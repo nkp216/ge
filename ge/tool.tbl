@@ -1,0 +1,5 @@
+T1 P1 D3.175000 Z-15.505593 ;1/8 end mill 
+T2 P2 D2.000000 Z-17.220283 ;1/6 end mill longer 
+T3 P3 D5.105400 Z-17.213604 ;#7 tap drill 
+T0 P0 ;no tool 
+T4 P4 D0.100000 ;simulated laser 

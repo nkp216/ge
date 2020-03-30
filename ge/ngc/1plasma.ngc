@@ -1,0 +1,67 @@
+(Filename: plasmac-sheetcam.ngc)
+(Post processor: SpaceShipPlasma-rev4 - plasmac.scpost)
+(Date: 13/05/19)
+G21 (Units: Metric)
+F10.0
+G90 G40
+G64 P0.254 Q0.025 (tracking tolerances set to 0.254) 
+(Part: Flat pattern - front bumper bracket)
+(Operation: Outside Offset, Colour 7,)
+(T2: A120 Mild Steel 40 amp, 2mm [108V, 5.2 bar])
+(Preset Volts: 108) ( Suggested Tip Size: 45 )
+( Min Cut Length for DTHC ON : 1 units ) 
+(Preset Volts set to 108 Volts)
+
+( ###########################)
+(Paused:  Check the DTHC Settings )
+( Hit RUN to continue)
+( ###########################)
+
+G0 X50.000 Y17.500
+F333
+M3 S1
+G1  X50.000 Y17.500
+G1 F100.0
+Y14.400 F2239.0
+G3 I0.000 J3.100
+G0 X50.025 Y14.425 (Add tiny extension)
+M65 P1
+M5
+G4 P0.5
+G0  X50.000 Y14.400
+X15.000 Y17.500
+F333
+M3 S1
+G1  X15.000 Y17.500
+G1 F100.0
+Y13.400 F2239.0
+G3 I0.000 J4.100
+G0 X15.025 Y13.425 (Add tiny extension)
+M65 P1
+M5
+G4 P0.5
+G0  X15.000 Y13.400
+X-3.900 Y10.000
+F333
+M3 S1
+G1  X-3.900 Y10.000
+G1 F100.0
+X-0.900 F2239.0
+Y25.000
+G2 X10.000 Y35.900 I10.900 J0.000
+G1 X55.000
+G2 X65.900 Y25.000 I0.000 J-10.900
+G1 Y10.000
+G2 X55.000 Y-0.900 I-10.900 J0.000
+G1 X10.000
+G2 X-0.900 Y10.000 I0.000 J10.900
+G1
+G0 X-0.875 Y10.025 (Add tiny extension)
+M65 P1
+M5
+G4 P0.5
+G0  X-0.900 Y10.000
+(No Parking values detected.Moving back to zero, zero)
+X0.000 Y0.000
+g1   X10.000 Y-10.000 
+M5 M30
