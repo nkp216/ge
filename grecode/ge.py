@@ -304,7 +304,7 @@ class GE(object):
             print 'error rot' 
 
     def scale (self, widget, data=None):
-        """ grecode -scale 3  3.ngc -o 3.ngc """
+        """ grecode -scale 3  in.ngc -o out.ngc """
         try:
             k = float(self.en7.get_text())
             if k == None: return            
